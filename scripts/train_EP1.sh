@@ -1,0 +1,1 @@
+python train.py --config_path ./configs/EP1.yml --device cuda:0  --exp_name GenImage-EP1 --tags  GenImage-EP1 --save_pth  --wandb_offline --seed 7310

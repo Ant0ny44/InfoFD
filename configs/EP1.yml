@@ -1,0 +1,57 @@
+data:
+
+
+  # This is used to specify the cache path for training/validation/test data. 
+  # You can also directly provide the path to preprocessed training/validation/test data here.
+  # When using cached training, if the specified file path does not exist, 
+  # preprocessing will be performed first, and the resulting data will be stored in the corresponding cache path.
+  # Note that for training data, captions corresponding to the images are required.
+  
+  train_root_cache: /mnt/sda/data/qinhaotian/preprocess/GenImageTT/train/GenImage_layer11_train_w_prompts.pkl 
+  val_root_cache: /mnt/sda/data/qinhaotian/preprocess/GenImageTT/val/GenImage_layer11_val.pkl
+  test_root_cache: /mnt/sda/data/qinhaotian/preprocess/GenImageTT/test/genImage_layer11.pkl
+
+  train_root: /mnt/sda/data/qinhaotian/datasets/GenImage/train
+  train_captions_path: /home/qinhaotian/projects/InternVL/genImage_train_captions.json
+  val_root: /mnt/sda/data/qinhaotian/datasets/GenImage/val
+  test_root: /mnt/sda/data/qinhaotian/datasets/GenImage/test
+
+
+  prompts: True
+  shuffle: True
+  num_workers: 14
+  batch_size:  512
+
+  
+model:
+
+  aug_strategy: fcn
+  aug_intensity:  0.5
+  shift_intensity: 0.4
+  input_dim: 768
+  hidden_dim: 32
+  num_classes: 2
+  prior_type: both
+  proj_type: linear
+  lp: 512
+
+optimizer:
+  
+  opt: SGD
+  decay_epoch: 0
+  scheduler_power: 0.8
+  base_lr: 0.25
+  min_lr: 0
+  lambda_0: 0.15 # CLS coef
+  lambda_1: 1.0 # Guiding coef
+  
+train:
+
+  max_epoch: 24
+  test_after_train: True
+  val_interval: 1
+  final_save_path: ./ckpgs/final-EP1.pth
+  best_save_path: ./ckpgs/best-EP1.pth
+
+log:
+  result_folder: './'
