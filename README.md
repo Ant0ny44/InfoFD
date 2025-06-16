@@ -17,7 +17,7 @@ Official implement of [Multimodal Conditional Information Bottleneck for General
 ## TODO
 - **Validation Code**: Implement and release validation scripts to evaluate the model's performance on various datasets.
 - **Inference Code**: Develop and share inference scripts for applying the trained model to new data for AI-generated image detection.
-- **Takeaway**
+- **Plug-and-Play**: Add a modular, plug-and-play implementation of the MMCIB framework to facilitate easy integration into other networks. 
 
 ## Installation
 To get started with the project, follow these steps:
