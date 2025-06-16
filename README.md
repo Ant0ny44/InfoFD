@@ -1,5 +1,5 @@
 # Multimodal Conditional Information Bottleneck for Generalizable AI-Generated Image Detection
-The Official implement of [Multimodal Conditional Information Bottleneck for Generalizable AI-Generated Image Detection](https://arxiv.org/abs/2505.15217).
+Official implement of [Multimodal Conditional Information Bottleneck for Generalizable AI-Generated Image Detection](https://arxiv.org/abs/2505.15217).
 
 
 <div align="center">
