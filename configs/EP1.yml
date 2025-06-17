@@ -7,14 +7,14 @@ data:
   # preprocessing will be performed first, and the resulting data will be stored in the corresponding cache path.
   # Note that for training data, captions corresponding to the images are required.
   
-  train_root_cache: /mnt/sda/data/qinhaotian/preprocess/GenImageTT/train/GenImage_layer11_train_w_prompts.pkl 
-  val_root_cache: /mnt/sda/data/qinhaotian/preprocess/GenImageTT/val/GenImage_layer11_val.pkl
-  test_root_cache: /mnt/sda/data/qinhaotian/preprocess/GenImageTT/test/genImage_layer11.pkl
+  train_root_cache: /mnt/sda/data/preprocess/train/GenImage_layer11_train_w_prompts.pkl 
+  val_root_cache: /mnt/sda/data/preprocess/val/GenImage_layer11_val.pkl
+  test_root_cache: /mnt/sda/data/preprocess/test/genImage_layer11.pkl
 
-  train_root: /mnt/sda/data/qinhaotian/datasets/GenImage/train
-  train_captions_path: /home/qinhaotian/projects/InternVL/genImage_train_captions.json
-  val_root: /mnt/sda/data/qinhaotian/datasets/GenImage/val
-  test_root: /mnt/sda/data/qinhaotian/datasets/GenImage/test
+  train_root: /mnt/sda/data/datasets/GenImage/train
+  train_captions_path: /home/projects/InternVL/genImage_train_captions.json
+  val_root: /mnt/sda/data/datasets/GenImage/val
+  test_root: /mnt/sda/data/datasets/GenImage/test
 
 
   prompts: True

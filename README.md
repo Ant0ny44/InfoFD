@@ -25,16 +25,42 @@ To get started with the project, follow these steps:
    ```bash
    git clone https://github.com/Ant0ny44/InfoFD.git
    ```
-2. Install dependencies (to be updated with specific requirements):
+2. Install dependencies:
    ```bash
    conda env create -f environment.yml -n infoFD
    ```
-3. Modified the `env.ini`.
+3. Modify the `env.ini`.
     ```ini
     [WANDB]
     TOKEN=YOUR_WANDB_TOKEN_HERE
     ```
+4. Change the data path in `configs/EP1.yml`:
+   ```yml
+    data:
 
+
+    # This is used to specify the cache path for training/validation/test data. 
+    # You can also directly provide the path to preprocessed training/validation/test data here.
+    # When using cached training, if the specified file path does not exist, 
+    # preprocessing will be performed first, and the resulting data will be stored in the corresponding cache path.
+    # Note that for training data, captions corresponding to the images are required.
+    
+    train_root_cache:  TRAIN_ROOT_CACHE_PATH 
+    val_root_cache: VAL_ROOT_CACHE_PATH
+    test_root_cache: TEST_ROOT_CACHE_PATH
+
+    train_root: GENIMAGE_TRAIN_PATH
+    train_captions_path: ./data/genImage_train_captions.json
+    val_root: GENIMAGE_VAL_PATH
+    test_root: GENIMAGE_TEST_PATH
+
+
+    prompts: True
+    shuffle: True
+    num_workers: 14
+    batch_size:  512
+    ...
+   ```
 ## Usage
 ### Training
 The training code is available in the `train.py` directory. To train the model, run:
@@ -43,7 +69,7 @@ bash scripts/train_EP1.sh
 ```
 To run the statistic results, run:
 ```bash
-bash /Users/antony/Projects/InfoFD/scripts/train_EP1_stas.sh
+bash scripts/train_EP1_stas.sh
 ```
 See the `configs/` directory for model details.
 
