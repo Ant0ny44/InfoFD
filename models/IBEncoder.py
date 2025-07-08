@@ -134,7 +134,7 @@ class IBEncoder(torch.nn.Module):
         # 1. Calculate mean and variance.
         if self.training:
 
-            if torch.rand(1) <2:
+            if torch.rand(1) < 0.2:
 
                 img_features, prompts, y_gt = self.aug_strategies(img_features, prompts, y_gt, self.shift_intensity, self.aug_intensity)
             

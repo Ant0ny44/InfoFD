@@ -126,12 +126,6 @@ class IBEvaluator(IBTrainer):
 
         self.eval()
 
-        if self.args.z_required:
-
-            with open(self.args.save_path, 'wb') as f:
-
-                pickle.dump(self.z_dict, f)
-
 if __name__ == '__main__':
     evaluator = IBEvaluator()
     evaluator.start()
