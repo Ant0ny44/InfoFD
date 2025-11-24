@@ -1,5 +1,5 @@
-# Multimodal Conditional Information Bottleneck for Generalizable AI-Generated Image Detection
-Official implement of [Multimodal Conditional Information Bottleneck for Generalizable AI-Generated Image Detection](https://arxiv.org/abs/2505.15217).
+# Exploiting Forgery-Induced Alignment Bias for Generalisable AI-Generated Image Detection
+Official implement of [Exploiting Forgery-Induced Alignment Bias for Generalisable AI-Generated Image Detection](https://arxiv.org/abs/2505.15217).
 
 
 <div align="center">
