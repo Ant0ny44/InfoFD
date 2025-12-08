@@ -128,4 +128,4 @@ class IBEvaluator(IBTrainer):
 
 if __name__ == '__main__':
     evaluator = IBEvaluator()
-    evaluator.start()
+    evaluator.start() 

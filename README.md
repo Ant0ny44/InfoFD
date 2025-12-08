@@ -27,7 +27,7 @@ To get started with the project, follow these steps:
    ```
 2. Install dependencies:
    ```bash
-   conda env create -f environment.yml -n infoFD
+   conda env create -f environment.yml -n infoFD 
    ```
 3. Modify the `env.ini`.
     ```ini

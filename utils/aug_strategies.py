@@ -1,5 +1,5 @@
 import torch
-
+ 
 def gaussian(features:torch.Tensor, prompts:torch.Tensor, gt:torch.Tensor, shift_intensity:float,intensity:float):
 
     noisy =  torch.rand_like(features[0]) * shift_intensity* 2 - shift_intensity + torch.randn_like(features) * intensity

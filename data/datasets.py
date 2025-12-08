@@ -11,7 +11,7 @@ from io import BytesIO
 from scipy.ndimage.filters import gaussian_filter
 import torchvision.transforms.functional as TF
 from torchvision.transforms import transforms,InterpolationMode
-
+ 
 class AugStrategies(Enum):
 
     @classmethod

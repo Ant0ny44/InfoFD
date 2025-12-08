@@ -1,7 +1,7 @@
 import torch
 from .clip.clip import load
 from .IBEncoder import IBEncoder
-
+ 
 def load_model(config:dict[str:str|float|int]) -> torch.nn.Module:
 
     model:IBEncoder = IBEncoder(config['model']['hidden_dim'], 

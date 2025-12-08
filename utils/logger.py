@@ -1,7 +1,7 @@
 import torch
 import wandb
 class WandbLogger():
-
+ 
     def __init__(self, 
                  user_token:str,
                  project_name:str, 
